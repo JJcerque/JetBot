@@ -1,0 +1,45 @@
+[1.051s] Invoking command in '/home/admon/Jetbot/src/Jetbot': PYTHONPATH=/home/admon/Jetbot/build/Jetbot/prefix_override:/home/admon/Jetbot/install/Jetbot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/Jetbot build --build-base /home/admon/Jetbot/build/Jetbot/build install --record /home/admon/Jetbot/build/Jetbot/install.log --single-version-externally-managed
+[1.338s] running egg_info
+[1.339s] creating ../../build/Jetbot/Jetbot.egg-info
+[1.339s] writing ../../build/Jetbot/Jetbot.egg-info/PKG-INFO
+[1.340s] writing dependency_links to ../../build/Jetbot/Jetbot.egg-info/dependency_links.txt
+[1.340s] writing entry points to ../../build/Jetbot/Jetbot.egg-info/entry_points.txt
+[1.340s] writing requirements to ../../build/Jetbot/Jetbot.egg-info/requires.txt
+[1.340s] writing top-level names to ../../build/Jetbot/Jetbot.egg-info/top_level.txt
+[1.340s] writing manifest file '../../build/Jetbot/Jetbot.egg-info/SOURCES.txt'
+[1.342s] reading manifest file '../../build/Jetbot/Jetbot.egg-info/SOURCES.txt'
+[1.343s] writing manifest file '../../build/Jetbot/Jetbot.egg-info/SOURCES.txt'
+[1.343s] running build
+[1.343s] running build_py
+[1.343s] creating /home/admon/Jetbot/build/Jetbot/build
+[1.344s] creating /home/admon/Jetbot/build/Jetbot/build/lib
+[1.344s] creating /home/admon/Jetbot/build/Jetbot/build/lib/Jetbot
+[1.344s] copying Jetbot/__init__.py -> /home/admon/Jetbot/build/Jetbot/build/lib/Jetbot
+[1.344s] running install
+[1.371s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.371s]   warnings.warn(
+[1.372s] running install_lib
+[1.373s] creating /home/admon/Jetbot/install/Jetbot/lib/python3.10/site-packages/Jetbot
+[1.373s] copying /home/admon/Jetbot/build/Jetbot/build/lib/Jetbot/__init__.py -> /home/admon/Jetbot/install/Jetbot/lib/python3.10/site-packages/Jetbot
+[1.373s] byte-compiling /home/admon/Jetbot/install/Jetbot/lib/python3.10/site-packages/Jetbot/__init__.py to __init__.cpython-310.pyc
+[1.374s] running install_data
+[1.375s] creating /home/admon/Jetbot/install/Jetbot/share/ament_index
+[1.375s] creating /home/admon/Jetbot/install/Jetbot/share/ament_index/resource_index
+[1.375s] creating /home/admon/Jetbot/install/Jetbot/share/ament_index/resource_index/packages
+[1.375s] copying resource/Jetbot -> /home/admon/Jetbot/install/Jetbot/share/ament_index/resource_index/packages
+[1.376s] copying package.xml -> /home/admon/Jetbot/install/Jetbot/share/Jetbot
+[1.376s] creating /home/admon/Jetbot/install/Jetbot/share/Jetbot/urdf
+[1.376s] copying urdf/Carro.urdf -> /home/admon/Jetbot/install/Jetbot/share/Jetbot/urdf
+[1.376s] creating /home/admon/Jetbot/install/Jetbot/share/Jetbot/launch
+[1.376s] copying launch/display.launch.py -> /home/admon/Jetbot/install/Jetbot/share/Jetbot/launch
+[1.376s] creating /home/admon/Jetbot/install/Jetbot/share/Jetbot/meshes
+[1.377s] copying meshes/Rueda_derecha_link.STL -> /home/admon/Jetbot/install/Jetbot/share/Jetbot/meshes
+[1.377s] copying meshes/cabeza_link.STL -> /home/admon/Jetbot/install/Jetbot/share/Jetbot/meshes
+[1.377s] copying meshes/base_link.STL -> /home/admon/Jetbot/install/Jetbot/share/Jetbot/meshes
+[1.377s] copying meshes/cuello_link.STL -> /home/admon/Jetbot/install/Jetbot/share/Jetbot/meshes
+[1.377s] copying meshes/Rueda_izquierda_link.STL -> /home/admon/Jetbot/install/Jetbot/share/Jetbot/meshes
+[1.377s] running install_egg_info
+[1.380s] Copying ../../build/Jetbot/Jetbot.egg-info to /home/admon/Jetbot/install/Jetbot/lib/python3.10/site-packages/Jetbot-0.0.0-py3.10.egg-info
+[1.381s] running install_scripts
+[1.404s] writing list of installed files to '/home/admon/Jetbot/build/Jetbot/install.log'
+[1.435s] Invoked command in '/home/admon/Jetbot/src/Jetbot' returned '0': PYTHONPATH=/home/admon/Jetbot/build/Jetbot/prefix_override:/home/admon/Jetbot/install/Jetbot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/Jetbot build --build-base /home/admon/Jetbot/build/Jetbot/build install --record /home/admon/Jetbot/build/Jetbot/install.log --single-version-externally-managed

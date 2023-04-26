@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Jetbot">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.018409 0 0.015682"
+        rpy="0 0 0" />
+      <mass
+        value="0.528" />
+      <inertia
+        ixx="0.0005138"
+        ixy="-1.2069E-20"
+        ixz="-3.5277E-21"
+        iyy="0.0007382"
+        iyz="4.3273E-20"
+        izz="0.0006868" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jetbot/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jetbot/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Rueda_derecha_link">
+    <inertial>
+      <origin
+        xyz="-0.0026316 0.0030263 0.01"
+        rpy="0 0 0" />
+      <mass
+        value="0.089242" />
+      <inertia
+        ixx="1.1594E-05"
+        ixy="2.4357E-20"
+        ixz="5.5677E-22"
+        iyy="0.00012518"
+        iyz="-2.4705E-22"
+        izz="0.00013082" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jetbot/meshes/Rueda_derecha_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jetbot/meshes/Rueda_derecha_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Rueda_derecha_joint"
+    type="continuous">
+    <origin
+      xyz="0.00086034 0.04 -0.029474"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Rueda_derecha_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="100"
+      velocity="100" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="Rueda_izquierda_link">
+    <inertial>
+      <origin
+        xyz="0.0026316 0.0030263 -0.01"
+        rpy="0 0 0" />
+      <mass
+        value="0.089242" />
+      <inertia
+        ixx="1.1594E-05"
+        ixy="-2.4357E-20"
+        ixz="-1.6972E-21"
+        iyy="0.00012518"
+        iyz="-2.732E-36"
+        izz="0.00013082" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jetbot/meshes/Rueda_izquierda_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jetbot/meshes/Rueda_izquierda_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Rueda_izquerda_joint"
+    type="continuous">
+    <origin
+      xyz="0.00086034 -0.06 -0.029474"
+      rpy="-1.5708 0 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="Rueda_izquierda_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="100"
+      velocity="100" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="cuello_link">
+    <inertial>
+      <origin
+        xyz="0 0 -0.01"
+        rpy="0 0 0" />
+      <mass
+        value="0.03" />
+      <inertia
+        ixx="7.25E-06"
+        ixy="5.7785E-22"
+        ixz="-4.3548E-22"
+        iyy="3.25E-06"
+        iyz="-1.022E-21"
+        izz="8.5E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jetbot/meshes/cuello_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.28627 0.66275 0.32941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jetbot/meshes/cuello_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cuello_joint"
+    type="continuous">
+    <origin
+      xyz="0.045 0 0.14"
+      rpy="0 0 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="cuello_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="cabeza_link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jetbot/meshes/cabeza_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jetbot/meshes/cabeza_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cabeza_joint"
+    type="continuous">
+    <origin
+      xyz="0.05 0 0.155"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="cabeza_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+</robot>

@@ -1,0 +1,65 @@
+[0.000000] (-) TimerEvent: {}
+[0.000336] (Jetbot) JobQueued: {'identifier': 'Jetbot', 'dependencies': OrderedDict()}
+[0.001114] (Jetbot) JobStarted: {'identifier': 'Jetbot'}
+[0.099299] (-) TimerEvent: {}
+[0.199563] (-) TimerEvent: {}
+[0.299843] (-) TimerEvent: {}
+[0.400101] (-) TimerEvent: {}
+[0.500421] (-) TimerEvent: {}
+[0.600723] (-) TimerEvent: {}
+[0.701056] (-) TimerEvent: {}
+[0.801391] (-) TimerEvent: {}
+[0.901697] (-) TimerEvent: {}
+[1.002015] (-) TimerEvent: {}
+[1.049219] (Jetbot) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/Jetbot', 'build', '--build-base', '/home/admon/Jetbot/build/Jetbot/build', 'install', '--record', '/home/admon/Jetbot/build/Jetbot/install.log', '--single-version-externally-managed'], 'cwd': '/home/admon/Jetbot/src/Jetbot', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'admon', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/admon', 'OLDPWD': '/home/admon/Jetbot/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2171', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/humble/', 'ROS_DISTRO': 'humble', 'LOGNAME': 'admon', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'admon', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/admon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/admon-HP-Pavilion-14-Notebook-PC:@/tmp/.ICE-unix/2142,unix/admon-HP-Pavilion-14-Notebook-PC:/tmp/.ICE-unix/2142', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/91ce5af1_4e5e_4915_bb81_cbdcaf1d2f84', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.100', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/admon/Jetbot/build/Jetbot', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/admon/Jetbot/build/Jetbot/prefix_override:/home/admon/Jetbot/install/Jetbot/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[1.102135] (-) TimerEvent: {}
+[1.202435] (-) TimerEvent: {}
+[1.302736] (-) TimerEvent: {}
+[1.339385] (Jetbot) StdoutLine: {'line': b'running egg_info\n'}
+[1.340057] (Jetbot) StdoutLine: {'line': b'creating ../../build/Jetbot/Jetbot.egg-info\n'}
+[1.340349] (Jetbot) StdoutLine: {'line': b'writing ../../build/Jetbot/Jetbot.egg-info/PKG-INFO\n'}
+[1.340619] (Jetbot) StdoutLine: {'line': b'writing dependency_links to ../../build/Jetbot/Jetbot.egg-info/dependency_links.txt\n'}
+[1.340794] (Jetbot) StdoutLine: {'line': b'writing entry points to ../../build/Jetbot/Jetbot.egg-info/entry_points.txt\n'}
+[1.340977] (Jetbot) StdoutLine: {'line': b'writing requirements to ../../build/Jetbot/Jetbot.egg-info/requires.txt\n'}
+[1.341071] (Jetbot) StdoutLine: {'line': b'writing top-level names to ../../build/Jetbot/Jetbot.egg-info/top_level.txt\n'}
+[1.341197] (Jetbot) StdoutLine: {'line': b"writing manifest file '../../build/Jetbot/Jetbot.egg-info/SOURCES.txt'\n"}
+[1.343140] (Jetbot) StdoutLine: {'line': b"reading manifest file '../../build/Jetbot/Jetbot.egg-info/SOURCES.txt'\n"}
+[1.343984] (Jetbot) StdoutLine: {'line': b"writing manifest file '../../build/Jetbot/Jetbot.egg-info/SOURCES.txt'\n"}
+[1.344214] (Jetbot) StdoutLine: {'line': b'running build\n'}
+[1.344352] (Jetbot) StdoutLine: {'line': b'running build_py\n'}
+[1.344543] (Jetbot) StdoutLine: {'line': b'creating /home/admon/Jetbot/build/Jetbot/build\n'}
+[1.344664] (Jetbot) StdoutLine: {'line': b'creating /home/admon/Jetbot/build/Jetbot/build/lib\n'}
+[1.344759] (Jetbot) StdoutLine: {'line': b'creating /home/admon/Jetbot/build/Jetbot/build/lib/Jetbot\n'}
+[1.344842] (Jetbot) StdoutLine: {'line': b'copying Jetbot/__init__.py -> /home/admon/Jetbot/build/Jetbot/build/lib/Jetbot\n'}
+[1.344924] (Jetbot) StdoutLine: {'line': b'running install\n'}
+[1.371841] (Jetbot) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[1.372140] (Jetbot) StderrLine: {'line': b'  warnings.warn(\n'}
+[1.372638] (Jetbot) StdoutLine: {'line': b'running install_lib\n'}
+[1.373606] (Jetbot) StdoutLine: {'line': b'creating /home/admon/Jetbot/install/Jetbot/lib/python3.10/site-packages/Jetbot\n'}
+[1.373954] (Jetbot) StdoutLine: {'line': b'copying /home/admon/Jetbot/build/Jetbot/build/lib/Jetbot/__init__.py -> /home/admon/Jetbot/install/Jetbot/lib/python3.10/site-packages/Jetbot\n'}
+[1.374475] (Jetbot) StdoutLine: {'line': b'byte-compiling /home/admon/Jetbot/install/Jetbot/lib/python3.10/site-packages/Jetbot/__init__.py to __init__.cpython-310.pyc\n'}
+[1.374767] (Jetbot) StdoutLine: {'line': b'running install_data\n'}
+[1.375505] (Jetbot) StdoutLine: {'line': b'creating /home/admon/Jetbot/install/Jetbot/share/ament_index\n'}
+[1.375864] (Jetbot) StdoutLine: {'line': b'creating /home/admon/Jetbot/install/Jetbot/share/ament_index/resource_index\n'}
+[1.376121] (Jetbot) StdoutLine: {'line': b'creating /home/admon/Jetbot/install/Jetbot/share/ament_index/resource_index/packages\n'}
+[1.376343] (Jetbot) StdoutLine: {'line': b'copying resource/Jetbot -> /home/admon/Jetbot/install/Jetbot/share/ament_index/resource_index/packages\n'}
+[1.376507] (Jetbot) StdoutLine: {'line': b'copying package.xml -> /home/admon/Jetbot/install/Jetbot/share/Jetbot\n'}
+[1.376713] (Jetbot) StdoutLine: {'line': b'creating /home/admon/Jetbot/install/Jetbot/share/Jetbot/urdf\n'}
+[1.376897] (Jetbot) StdoutLine: {'line': b'copying urdf/Carro.urdf -> /home/admon/Jetbot/install/Jetbot/share/Jetbot/urdf\n'}
+[1.377073] (Jetbot) StdoutLine: {'line': b'creating /home/admon/Jetbot/install/Jetbot/share/Jetbot/launch\n'}
+[1.377259] (Jetbot) StdoutLine: {'line': b'copying launch/display.launch.py -> /home/admon/Jetbot/install/Jetbot/share/Jetbot/launch\n'}
+[1.377441] (Jetbot) StdoutLine: {'line': b'creating /home/admon/Jetbot/install/Jetbot/share/Jetbot/meshes\n'}
+[1.377623] (Jetbot) StdoutLine: {'line': b'copying meshes/Rueda_derecha_link.STL -> /home/admon/Jetbot/install/Jetbot/share/Jetbot/meshes\n'}
+[1.377816] (Jetbot) StdoutLine: {'line': b'copying meshes/cabeza_link.STL -> /home/admon/Jetbot/install/Jetbot/share/Jetbot/meshes\n'}
+[1.377955] (Jetbot) StdoutLine: {'line': b'copying meshes/base_link.STL -> /home/admon/Jetbot/install/Jetbot/share/Jetbot/meshes\n'}
+[1.378089] (Jetbot) StdoutLine: {'line': b'copying meshes/cuello_link.STL -> /home/admon/Jetbot/install/Jetbot/share/Jetbot/meshes\n'}
+[1.378239] (Jetbot) StdoutLine: {'line': b'copying meshes/Rueda_izquierda_link.STL -> /home/admon/Jetbot/install/Jetbot/share/Jetbot/meshes\n'}
+[1.378388] (Jetbot) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.380877] (Jetbot) StdoutLine: {'line': b'Copying ../../build/Jetbot/Jetbot.egg-info to /home/admon/Jetbot/install/Jetbot/lib/python3.10/site-packages/Jetbot-0.0.0-py3.10.egg-info\n'}
+[1.381902] (Jetbot) StdoutLine: {'line': b'running install_scripts\n'}
+[1.402860] (-) TimerEvent: {}
+[1.404517] (Jetbot) StdoutLine: {'line': b"writing list of installed files to '/home/admon/Jetbot/build/Jetbot/install.log'\n"}
+[1.436111] (Jetbot) CommandEnded: {'returncode': 0}
+[1.503033] (-) TimerEvent: {}
+[1.520357] (Jetbot) JobEnded: {'identifier': 'Jetbot', 'rc': 0}
+[1.521385] (-) EventReactorShutdown: {}
