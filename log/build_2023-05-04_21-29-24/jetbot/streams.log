@@ -1,0 +1,23 @@
+[0.762s] Invoking command in '/home/admon/jetbot/src/jetbot': PYTHONPATH=/home/admon/jetbot/build/jetbot/prefix_override:/home/admon/jetbot/install/jetbot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/jetbot build --build-base /home/admon/jetbot/build/jetbot/build install --record /home/admon/jetbot/build/jetbot/install.log --single-version-externally-managed
+[1.050s] running egg_info
+[1.050s] writing ../../build/jetbot/jetbot.egg-info/PKG-INFO
+[1.051s] writing dependency_links to ../../build/jetbot/jetbot.egg-info/dependency_links.txt
+[1.051s] writing entry points to ../../build/jetbot/jetbot.egg-info/entry_points.txt
+[1.051s] writing requirements to ../../build/jetbot/jetbot.egg-info/requires.txt
+[1.051s] writing top-level names to ../../build/jetbot/jetbot.egg-info/top_level.txt
+[1.053s] reading manifest file '../../build/jetbot/jetbot.egg-info/SOURCES.txt'
+[1.054s] writing manifest file '../../build/jetbot/jetbot.egg-info/SOURCES.txt'
+[1.054s] running build
+[1.054s] running build_py
+[1.055s] running install
+[1.055s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.055s]   warnings.warn(
+[1.055s] running install_lib
+[1.058s] running install_data
+[1.058s] copying urdf/jetbot.urdf -> /home/admon/jetbot/install/jetbot/share/jetbot/urdf
+[1.059s] running install_egg_info
+[1.060s] removing '/home/admon/jetbot/install/jetbot/lib/python3.10/site-packages/jetbot-0.0.0-py3.10.egg-info' (and everything under it)
+[1.061s] Copying ../../build/jetbot/jetbot.egg-info to /home/admon/jetbot/install/jetbot/lib/python3.10/site-packages/jetbot-0.0.0-py3.10.egg-info
+[1.062s] running install_scripts
+[1.085s] writing list of installed files to '/home/admon/jetbot/build/jetbot/install.log'
+[1.117s] Invoked command in '/home/admon/jetbot/src/jetbot' returned '0': PYTHONPATH=/home/admon/jetbot/build/jetbot/prefix_override:/home/admon/jetbot/install/jetbot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/jetbot build --build-base /home/admon/jetbot/build/jetbot/build install --record /home/admon/jetbot/build/jetbot/install.log --single-version-externally-managed

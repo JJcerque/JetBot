@@ -1,0 +1,9 @@
+[0.773s] Invoking command in '/home/admon/jetbot/src/jetbot': PYTHONPATH=/home/admon/jetbot/build/Jetbot/prefix_override:/home/admon/jetbot/install/Jetbot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/Jetbot build --build-base /home/admon/jetbot/build/Jetbot/build install --record /home/admon/jetbot/build/Jetbot/install.log --single-version-externally-managed
+[1.064s] running egg_info
+[1.065s] writing ../../build/Jetbot/Jetbot.egg-info/PKG-INFO
+[1.065s] writing dependency_links to ../../build/Jetbot/Jetbot.egg-info/dependency_links.txt
+[1.066s] writing entry points to ../../build/Jetbot/Jetbot.egg-info/entry_points.txt
+[1.066s] writing requirements to ../../build/Jetbot/Jetbot.egg-info/requires.txt
+[1.066s] writing top-level names to ../../build/Jetbot/Jetbot.egg-info/top_level.txt
+[1.068s] error: package directory 'Jetbot' does not exist
+[1.090s] Invoked command in '/home/admon/jetbot/src/jetbot' returned '1': PYTHONPATH=/home/admon/jetbot/build/Jetbot/prefix_override:/home/admon/jetbot/install/Jetbot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/Jetbot build --build-base /home/admon/jetbot/build/Jetbot/build install --record /home/admon/jetbot/build/Jetbot/install.log --single-version-externally-managed
