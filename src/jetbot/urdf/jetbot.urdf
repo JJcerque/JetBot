@@ -3,12 +3,12 @@
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
-  name="jetbot.zip">
+  name="jetbot">
   <link
     name="base_link">
     <inertial>
       <origin
-        xyz="0.00654026944078741 8.3842825998548E-05 -0.0115540240733828"
+        xyz="0.0127440831307621 8.71327684406065E-05 -0.000319974915683446"
         rpy="0 0 0" />
       <mass
         value="0.50474037145407" />
@@ -44,7 +44,7 @@
       </geometry>
     </collision>
   </link>
-  
+
   <gazebo reference="base_link">
     <mu1>200</mu1>
     <mu2>200</mu2>
@@ -53,20 +53,20 @@
   </gazebo>
 
   <link
-    name="rueda_izquierda_link">
+    name="derecha_arriba_link">
     <inertial>
       <origin
-        xyz="3.46944695195361E-17 5.55111512312578E-17 -0.111487858827401"
+        xyz="-8.0349E-06 7.461E-05 0.0083"
         rpy="0 0 0" />
       <mass
-        value="0.11" />
+        value="0.008712" />
       <inertia
-        ixx="0.00002"
-        ixy="0"
-        ixz="0"
-        iyy="0.000002"
+        ixx="9.339E-03"
+        ixy="-3.12E-6"
+        ixz="1.690E-5"
+        iyy="0"
         iyz="0"
-        izz="0.0001" />
+        izz="1.806E-06" />
     </inertial>
     <visual>
       <origin
@@ -74,12 +74,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://jetbot/meshes/rueda_izquierda_link.STL" />
+          filename="package://jetbot/meshes/derecha_arriba_link.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.286274509803922 0.662745098039216 0.329411764705882 1" />
+          rgba="0.101960784313725 0.101960784313725 0.101960784313725 1" />
       </material>
     </visual>
     <collision>
@@ -88,20 +88,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://jetbot/meshes/rueda_izquierda_link.STL" />
+          filename="package://jetbot/meshes/derecha_arriba_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="rueda_izquierda_joint"
+    name="derecha_arriba_joint"
     type="continuous">
     <origin
-      xyz="-0.00159534842276889 0.0575771474057684 -0.0259999999999999"
-      rpy="-1.5707963267949 0.00323559477416837 0" />
+      xyz="0.048098 -0.061627 -0.024956"
+      rpy="-1.5708 -0.22688 0" />
     <parent
       link="base_link" />
     <child
-      link="rueda_izquierda_link" />
+      link="derecha_arriba_link" />
     <axis
       xyz="0 0 1" />
     <limit
@@ -112,7 +112,7 @@
       friction="0.1" />
   </joint>
 
-  <gazebo reference="rueda_izquierda_link">
+  <gazebo reference="derecha_arriba_link">
     <mu1>200</mu1>
     <mu2>200</mu2>
     <kp>1000000</kp>
@@ -120,20 +120,20 @@
   </gazebo>
 
   <link
-    name="rueda_derecha_link">
+    name="derecha_abajo_link">
     <inertial>
       <origin
-        xyz="-3.46944695195361E-17 5.55111512312578E-17 -0.111487858827401"
+        xyz="0 -0.000347478415716737 0.00735438596528001"
         rpy="0 0 0" />
       <mass
-        value="0.11" />
+        value="0.0871203991688674" />
       <inertia
-        ixx="0.00002"
+        ixx="9.3384E-04"
         ixy="0"
         ixz="0"
-        iyy="0.00002"
+        iyy="9.3685E-04"
         iyz="0"
-        izz="0.0001" />
+        izz="1.806E-03" />
     </inertial>
     <visual>
       <origin
@@ -141,12 +141,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://jetbot/meshes/rueda_derecha_link.STL" />
+          filename="package://jetbot/meshes/derecha_abajo_link.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.286274509803922 0.662745098039216 0.329411764705882 1" />
+          rgba="0.101960784313725 0.101960784313725 0.101960784313725 1" />
       </material>
     </visual>
     <collision>
@@ -155,28 +155,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://jetbot/meshes/rueda_derecha_link.STL" />
+          filename="package://jetbot/meshes/derecha_abajo_link.STL" />
       </geometry>
     </collision>
   </link>
-
-  <gazebo reference="rueda_derecha_link">
-    <mu1>200</mu1>
-    <mu2>200</mu2>
-    <kp>1000000</kp>
-    <kd>1</kd>
-  </gazebo>
-
   <joint
-    name="rueda_derecha_joint"
+    name="derecha_abajo_joint"
     type="continuous">
     <origin
-      xyz="-0.00159534842276885 -0.0574179141205974 -0.026"
-      rpy="1.5707963267949 0.00323559477416897 0" />
+      xyz="-0.061638 -0.060627 -0.024684"
+      rpy="1.5708 0 3.1416" />
     <parent
       link="base_link" />
     <child
-      link="rueda_derecha_link" />
+      link="derecha_abajo_link" />
     <axis
       xyz="0 0 1" />
     <limit
@@ -186,22 +178,163 @@
       damping="0.1"
       friction="0.1" />
   </joint>
+
+  <gazebo reference="derecha_abajo_link">
+    <mu1>200</mu1>
+    <mu2>200</mu2>
+    <kp>1000000</kp>
+    <kd>1</kd>
+  </gazebo>
+
+  <link
+    name="izquierda_arriba_link">
+    <inertial>
+      <origin
+        xyz="0 0.000347478415716751 0.00735438596527999"
+        rpy="0 0 0" />
+      <mass
+        value="0.0087120399168867" />
+      <inertia
+        ixx="9.338E-03"
+        ixy="0"
+        ixz="0"
+        iyy="9.368E-03"
+        iyz="0"
+        izz="1.806E-03" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot/meshes/izquierda_arriba_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.101960784313725 0.101960784313725 0.101960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot/meshes/izquierda_arriba_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="izquierda_arriba_joint"
+    type="continuous">
+    <origin
+      xyz="0.04845 0.060786 -0.024684"
+      rpy="-1.5708 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="izquierda_arriba_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="100"
+      velocity="100" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+
+  <gazebo reference="izquierda_arriba_link">
+    <mu1>200</mu1>
+    <mu2>200</mu2>
+    <kp>1000000</kp>
+    <kd>1</kd>
+  </gazebo>
+
+  <link
+    name="izquierda_abajo_link">
+    <inertial>
+      <origin
+        xyz="0 0.000347478415716751 0.00735438596527993"
+        rpy="0 0 0" />
+      <mass
+        value="0.0087120399168867" />
+      <inertia
+        ixx="9.338E-04"
+        ixy="0"
+        ixz="0"
+        iyy="9.368E-04"
+        iyz="0"
+        izz="1.806E-03" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot/meshes/izquierda_abajo_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.101960784313725 0.101960784313725 0.101960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot/meshes/izquierda_abajo_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="izquierda_abajo_joint"
+    type="continuous">
+    <origin
+      xyz="-0.061638 0.060786 -0.024684"
+      rpy="-1.5708 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="izquierda_abajo_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="100"
+      velocity="100" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+
+  <gazebo reference="izquierda_abajo_link">
+    <mu1>200</mu1>
+    <mu2>200</mu2>
+    <kp>1000000</kp>
+    <kd>1</kd>
+  </gazebo>
 
   <link
     name="subir_link">
     <inertial>
       <origin
-        xyz="-0.0112360433284504 1.86777337999322E-05 0.0218014538142358"
+        xyz="0.0112360433284504 -1.86777337999045E-05 0.0218014538142358"
         rpy="0 0 0" />
       <mass
-        value="0.1273663857179312" />
+        value="0.0273" />
       <inertia
-        ixx="2.84948866223219E-03"
-        ixy="1.10924267812716E-03"
-        ixz="6.06486494340449E-03"
-        iyy="2.44457860376768E-03"
-        iyz="-9.62444108911587E-05"
-        izz="1.68835801720332E-03" />
+        ixx="2.84948E-02"
+        ixy="1.10924E-05"
+        ixz="0"
+        iyy="2.4445E-02"
+        iyz="9.6244E-05"
+        izz="1.688E-02" />
     </inertial>
     <visual>
       <origin
@@ -240,7 +373,7 @@
     type="prismatic">
     <origin
       xyz="0.075406 7.7147E-05 0.083651"
-      rpy="0 0 0" />
+      rpy="0 0 3.1416" />
     <parent
       link="base_link" />
     <child
@@ -256,22 +389,21 @@
       damping="0.1"
       friction="0.1" />
   </joint>
-  
   <link
     name="cuello_link">
     <inertial>
       <origin
-        xyz="0.000256043952758245 0.000242602809698511 0.004320766121115"
+        xyz="0.00025 0.00024 0.0043"
         rpy="0 0 0" />
       <mass
-        value="0.1152446218733567" />
+        value="0.0152" />
       <inertia
-        ixx="9.531648938002E-03"
-        ixy="0"
+        ixx="9.531E-03"
+        ixy="6.452E-05"
         ixz="0"
-        iyy="3.61671912523105E-03"
+        iyy="3.616E-03"
         iyz="0"
-        izz="1.13343121190557E-02" />
+        izz="1.133E-02" />
     </inertial>
     <visual>
       <origin
@@ -301,8 +433,8 @@
     name="cuello_joint"
     type="revolute">
     <origin
-      xyz="-0.0192210339441284 -0.000736206693809111 0.0493487604025714"
-      rpy="0 0 3.14159265358979" />
+      xyz="0.0192 0.0007 0.0493"
+      rpy="0 0 0" />
     <parent
       link="subir_link" />
     <child
@@ -319,21 +451,29 @@
       friction="0.1" />
   </joint>
 
+  <gazebo reference="cuello_link">
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>1000000</kp>
+    <kd>1</kd>
+    <material>Gazebo/Yellow</material>
+  </gazebo>
+
   <link
     name="cabeza_link">
     <inertial>
       <origin
-        xyz="-0.0058376231114745 -0.0203720592897022 -0.0320469413089303"
+        xyz="0.02 -0.00698 0.0320"
         rpy="0 0 0" />
       <mass
-        value="0.127124344939099" />
+        value="0.0127" />
       <inertia
-        ixx="9.29041403714559E-03"
-        ixy="0"
-        ixz="0"
-        iyy="9.02758198745204E-03"
+        ixx="9.03564E-03"
+        ixy="9.56752-05"
+        ixz="6.61592E-06"
+        iyy="9.28229E-03"
         iyz="0"
-        izz="2.1595119252841E-03" />
+        izz="2.15950E-03" />
     </inertial>
     <visual>
       <origin
@@ -372,8 +512,8 @@
     name="cabeza_joint"
     type="revolute">
     <origin
-      xyz="0.00027896605587166 0.0322637933061906 0.0102106923628102"
-      rpy="-1.5707963267949 -0.471467109281761 0" />
+      xyz="0.00027 0.032264 0.010211"
+      rpy="-1.5708 0 -3.1416" />
     <parent
       link="cuello_link" />
     <child
@@ -381,33 +521,88 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-0.7"
-      upper="0.35" 
+      lower="-1.6"
+      upper="0.5" 
       effort="100"
       velocity="100" />
     <dynamics
       damping="0.1"
       friction="0.1" />
   </joint>
+  <link
+    name="camera_link">
+    <inertial>
+      <origin
+        xyz="0 0 -0.0014"
+        rpy="0 0 0" />
+      <mass
+        value="0.0018" />
+      <inertia
+        ixx="6.135E-03"
+        ixy="0"
+        ixz="0"
+        iyy="1.3635E-03"
+        iyz="0"
+        izz="1.95E-03" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot/meshes/camera_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://jetbot/meshes/camera_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="camera_joint"
+    type="fixed">
+    <origin
+      xyz="0.030723 -0.0098391 0.032"
+      rpy="0.33531 1.5708 0" />
+    <parent
+      link="cabeza_link" />
+    <child
+      link="camera_link" />
+    <axis
+      xyz="0 0 0" />
+    </joint>
+
+    
+
 
     <joint name="camera_optical_joint" type="fixed">
-        <parent link="cabeza_link"/>
+        <parent link="camera_link"/>
         <child link="camera_link_optical"/>
-        <origin xyz="0.00027896605587166 -0.0322637933061906 0.0102106923628102" 
-        rpy="0 0 0"/>
+        <origin xyz="1 1 1" rpy="0.3 0.3 0.3"/>
     </joint>
 
     <link name="camera_link_optical"></link>
 
-    <gazebo reference="cabeza_link">
+    <gazebo reference="camera_link">
         <material>Gazebo/Red</material>
 
         <sensor name="camera" type="camera">
-            <pose> 0 0 0 0 0 0 </pose>
+            <pose> 1 1 1 1 1 1 </pose>
             <visualize>true</visualize>
             <update_rate>10</update_rate>
             <camera>
-                <horizontal_fov>1.089</horizontal_fov>
+                <horizontal_fov>1.399</horizontal_fov>
                 <image>
                     <format>R8G8B8</format>
                     <width>640</width>
@@ -415,7 +610,7 @@
                 </image>
                 <clip>
                     <near>0.05</near>
-                    <far>8.0</far>
+                    <far>300</far>
                 </clip>
             </camera>
             <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
@@ -428,15 +623,15 @@
         <plugin name="diff_drive" filename="libgazebo_ros_diff_drive.so">
 
             <!-- Wheel Information -->
-            <left_joint>rueda_izquierda_joint</left_joint>
-            <right_joint>rueda_derecha_joint</right_joint>
+            <left_joint>izquierda_arriba_link</left_joint>
+            <right_joint>derecha_arriba_link</right_joint>
             <wheel_separation>0.115154295</wheel_separation>
             <wheel_diameter>0.1</wheel_diameter>
 
 
             <!-- Limits -->
-            <max_wheel_torque>200</max_wheel_torque>
-            <max_wheel_acceleration>10.0</max_wheel_acceleration>
+            <max_wheel_torque>500</max_wheel_torque>
+            <max_wheel_acceleration>80.0</max_wheel_acceleration>
 
             
             <!-- Output -->
